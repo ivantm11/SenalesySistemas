@@ -79,15 +79,18 @@ subplot(2,2,1);
 plot(tiempo, f1(tiempo), 'r', 'LineWidth', linea_media)
 title('f_{1}(t) = e^{-\alpha t}, donde \alpha = 0.5')
 xlabel('t[s]')
+grid on
 % Función 2
 subplot(2,2,2);
 plot(tiempo, f2(tiempo), 'r', 'LineWidth', linea_media)
 title('f_{2}(t) = 5 sin(\pi t)')
 xlabel('t[s]')
+grid on
 % Función producto
 subplot(2,2,[3,4]);
 plot(tiempo, g(tiempo), 'b', 'LineWidth', linea_ancha)
 title('(f_{1} \bullet f_{2}) (t) = 5 e^{-\alpha t} sin(\pi t)')
 xlabel('t[s]')
+grid on
 disp('4. Gráficas en ventana Figure 1')
 
